@@ -1,0 +1,91 @@
+/* .col{
+    border: 5px solid purple;
+    /* height: 300px; */
+/* width: 300px;
+    background: black;
+    overflow-x: auto; 
+} */
+
+.col {
+  flex: 0 0 0%;
+  float: left;
+}
+.flex-gap {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.spaceCOL {
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.row > * {
+  flex-shrink: 0;
+  max-width: 100%;
+  padding-left: 0%;
+  padding-left: 0%;
+  margin-top: var(--bs-gutter-y);
+}
+
+.btn,
+.btnLink {
+  padding: 4px;
+  margin: 3px;
+  /* color: yellow; */
+  /* padding: 4px; */
+  /* margin: 3px; */
+  background-color: rgb(400, 48, 100);
+  color: #222;
+  border: 2px inset darkgray;
+  border-radius: 4px;
+}
+
+.btn:hover,
+.btn:visited,
+.btn:active,
+.btn:focus .a:hover,
+.a:visited,
+.a:active,
+.a:focus .btnLink:hover,
+.btnLink:visited,
+.btnLink:active,
+.btnLink:focus {
+  background-color: rgb(0, 0, 0);
+  color: rgb(400, 48, 100);
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.8);
+}
+
+/* unvisited link */
+a:link {
+  color: green;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: red;
+}
+
+/* selected link */
+a:active {
+  color: yellow;
+}
+
+
+.emulated-flex-gap {
+  --gap: 12px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin: calc(-1 * var(--gap)) 0 0 calc(-1 * var(--gap));
+  width: calc(100% + var(--gap));
+}
+
+.emulated-flex-gap > * {
+  margin: var(--gap) 0 0 var(--gap);
+}
